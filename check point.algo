@@ -1,0 +1,67 @@
+ALGORITHM algorithm_name
+VAR
+ str:string;
+ length:entier
+BEGIN
+    write ("donner une phrase")
+    read(str)
+    write("voici la langeur est",length)
+END
+ALGORITHM algorithm_name
+VAR
+    velength:entier
+BEGIN
+    write("donner une phrase")
+    read(str)
+    for i from 1 to str.length STEP step DO 
+    IF(str[i]=""){ velngth=velength+1}
+
+
+    
+    END_FOR
+    write(" votre pharase contien",velength)
+    END
+    ALGORITHM algorithm_name
+    VAR
+        vcount:entier
+        vlist:"aieoyu"
+        i,j:entier
+    BEGIN
+        write("donner une phrase")
+        read( str)
+        FOR i FROM 1 TO str.length STEP step DO 
+        FOR  j FROM 1 TO vlist.length STEP step DO 
+        IF (vlist[j]= str[i]){
+        vcount=vcount+1}
+            
+        END_FOR
+        END_FOR
+        write ("NOMBRE DE VOYELES ESt", vcount )
+    END
+    ALGORITHM algorithm_name
+    VAR
+        a,b:entier
+    BEGIN
+          write('donner deux entiers')
+          read ( a,b)
+          sum=a*b
+          IF ( sum>0) {
+            write{"le produits set positive ,sum"}
+          
+          ELSE
+            {write("le produits est negatives,sum")}
+          }
+         END_IF
+    END
+    ALGORITHM algorithm_name
+    VAR
+        d:entier
+    BEGIN
+        write("donner un entier")
+        read (d)
+        sum=0
+        FOR i FROM 1 TO max d step DO
+        sum=sum+i
+        END_FOR
+        write(" la somme est",d)
+    END
